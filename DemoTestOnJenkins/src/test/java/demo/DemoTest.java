@@ -2,6 +2,7 @@ package demo;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -23,6 +24,7 @@ public class DemoTest {
 	         driver.get("https://www.pionglobal.com/");
 	       
 	         driver.manage().window().maximize();
+	         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);   
 	         
 	         System.out.println("Title of the page is: " + driver.getTitle());
 	         Assert.assertTrue(driver.getTitle().equals("PION Global"));
