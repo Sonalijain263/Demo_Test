@@ -15,10 +15,12 @@ public class DemoTest {
 		{
 	  	
 		System.setProperty("webdriver.chrome.driver","/usr/bin/google-chrome");
-		 ChromeOptions options = new ChromeOptions();
-	       options.addArguments("headless");
-	       options.addArguments("disable-gpu");	
-		driver = new ChromeDriver(options);
+	//	 ChromeOptions options = new ChromeOptions();
+	 //      options.addArguments("headless");
+	  //     options.addArguments("disable-gpu");	
+		DesiredCapabilities capability = DesiredCapabilities.chrome();
+		 driver = new RemoteWebDriver(new URL("http://139.59.77.9:8080/"), capability);
+	//	driver = new ChromeDriver(options);
 	 
 	         driver.get("https://www.pionglobal.com/");
 	       
