@@ -1,14 +1,10 @@
 package demo;
 
-import java.net.URL;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class DemoTest {
 	
@@ -19,13 +15,10 @@ public class DemoTest {
 		{
 	  	
 		System.setProperty("webdriver.chrome.driver","/usr/bin/google-chrome");
-	//	 ChromeOptions options = new ChromeOptions();
-	 //      options.addArguments("headless");
-	  //     options.addArguments("disable-gpu");	
-		DesiredCapabilities capability = DesiredCapabilities.chrome();
-		 driver = new RemoteWebDriver(new URL("http://139.59.77.9:8080/"), capability);
-	//	driver = new ChromeDriver(options);
-	 
+		 ChromeOptions options = new ChromeOptions();
+	        options.addArguments("headless");
+	        options.addArguments("disable-gpu");	
+		driver = new ChromeDriver(options);
 	         driver.get("https://www.pionglobal.com/");
 	       
 	         driver.manage().window().maximize();
