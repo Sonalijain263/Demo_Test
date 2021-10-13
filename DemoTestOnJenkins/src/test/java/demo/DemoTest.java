@@ -19,7 +19,7 @@ public class DemoTest {
 		public void setup() throws MalformedURLException
 		{
 	  	
-		System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
+		System.setProperty("webdriver.chrome.driver","/var/jenkins_home/cache/chromedriver");
 	//	 driver = new RemoteWebDriver(new URL("http://139.59.77.9:8080/"),new ChromeOptions()); 
 // 	    ChromeOptions options= new ChromeOptions();
 // 	    options.addArguments("--no-sandbox");
