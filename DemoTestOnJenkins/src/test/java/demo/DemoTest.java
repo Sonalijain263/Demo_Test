@@ -14,7 +14,7 @@ public class DemoTest {
 		public void setup()
 		{
 	  	
-		System.setProperty("webdriver.chrome.driver","E:\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
 		 ChromeOptions options = new ChromeOptions();
 	       options.addArguments("headless");
 	       options.addArguments("disable-gpu");	
