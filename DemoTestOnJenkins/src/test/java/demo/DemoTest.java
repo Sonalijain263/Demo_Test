@@ -25,7 +25,7 @@ public class DemoTest {
 	         driver.manage().window().maximize();
 	         
 	         System.out.println("Title of the page is: " + driver.getTitle());
-	         Assert.assertTrue(driver.getTitle().equals("Pion Global"));
+	         Assert.assertTrue(driver.getTitle().equals("PION Global"));
 	            
 		}
 }
