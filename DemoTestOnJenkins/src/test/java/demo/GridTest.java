@@ -27,7 +27,9 @@ public class GridTest {
 			//Chrome option  
 			ChromeOptions options = new ChromeOptions();
 			options.merge(cap);
-			options.setHeadless(true);
+		//	options.setHeadless(true);
+			options.addArguments("--headless");
+			options.addArguments("--disable-gpu");
 			
 			
 			//Hub URL
