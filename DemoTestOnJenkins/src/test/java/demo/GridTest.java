@@ -20,7 +20,7 @@ public class GridTest {
 		public void setup() throws MalformedURLException
 		{
 		 //Define desired capabilities
-			DesiredCapabilities cap=new DesiredCapabilities();
+		   DesiredCapabilities cap = DesiredCapabilities.chrome();
 			cap.setBrowserName("chrome");
 			cap.setPlatform(Platform.LINUX);
 			
