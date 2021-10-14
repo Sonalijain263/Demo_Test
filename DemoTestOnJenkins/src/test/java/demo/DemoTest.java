@@ -20,10 +20,10 @@ public class DemoTest {
 		{
 	  	
 	//	System.setProperty("webdriver.chrome.driver","/usr/bin/google-chrome");
-		 driver = new RemoteWebDriver(new URL("http://139.59.77.9:8080/"),new ChromeOptions()); 
- 	    ChromeOptions options= new ChromeOptions();
- 	    options.addArguments("--no-sandbox");
-		driver= new ChromeDriver(options);    
+//		 driver = new RemoteWebDriver(new URL("http://139.59.77.9:8080/"),new ChromeOptions()); 
+ //	    ChromeOptions options= new ChromeOptions();
+// 	    options.addArguments("--no-sandbox");
+		driver= new ChromeDriver();    
 		driver.get("https://www.pionglobal.com/");
 	       
 	         driver.manage().window().maximize();
