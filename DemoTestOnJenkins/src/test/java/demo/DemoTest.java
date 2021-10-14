@@ -28,7 +28,7 @@ public class DemoTest {
 // 	    options.addArguments("headless");
 //		driver= new ChromeDriver(options);  
 		DesiredCapabilities capability = DesiredCapabilities.chrome();
-		driver = new RemoteWebDriver(new URL("http://139.59.77.9:4444/"), capability);
+		driver = new RemoteWebDriver(new URL("http://139.59.77.9:4444/wd/hub"), capability);
 		ChromeOptions options= new ChromeOptions();
  	        options.addArguments("headless");
 		driver= new ChromeDriver(options);
