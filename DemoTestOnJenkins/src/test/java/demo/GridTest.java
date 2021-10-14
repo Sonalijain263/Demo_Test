@@ -14,31 +14,30 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class GridTest {
-	public WebDriver driver;
+	public static WebDriver driver;
 	
 	   @Test
 		public void setup() throws MalformedURLException
 		{
 		 //Define desired capabilities
 		   DesiredCapabilities cap = DesiredCapabilities.chrome();
+	//	   DesiredCapabilities cap=new DesiredCapabilities();
 			cap.setBrowserName("chrome");
 			cap.setPlatform(Platform.LINUX);
 			
 			//Chrome option  
 			ChromeOptions options = new ChromeOptions();
 			options.merge(cap);
-		//	options.setHeadless(true);
-			options.addArguments("--headless");
-			options.addArguments("--disable-gpu");
-			
-			
+			options.setHeadless(true);
+//			options.addArguments("--headless");
+//			options.addArguments("--disable-gpu");
+	
 			//Hub URL
 			String huburl ="http://139.59.77.9:4444/wd/hub";
 			 
 			// Create driver with hub address and capability
 			WebDriver driver=new RemoteWebDriver(new URL(huburl), options);
 			
-	
 			driver.get("https://www.pionglobal.com/");
 	       
 	         driver.manage().window().maximize();
