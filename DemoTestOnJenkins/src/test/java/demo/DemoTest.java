@@ -32,7 +32,7 @@ public class DemoTest {
 	options.addArguments("--no-sandbox"); // Bypass OS security model
 	driver = new ChromeDriver(options);
 	//	driver= new ChromeDriver();    
-		driver.get("https://www.pionglobal.com/");
+	driver.get("https://www.pionglobal.com/");
 	       
 	         driver.manage().window().maximize();
 	         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);   
