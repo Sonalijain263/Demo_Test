@@ -21,7 +21,7 @@ public class DemoTest {
 	   @Test
 		public void setup() throws MalformedURLException
 		{
-		System.setProperty("webdriver.chrome.driver","/usr/bin/google-chrome");
+//		System.setProperty("webdriver.chrome.driver","/usr/bin/google-chrome");
 //		 System.setProperty("webdriver.chrome.driver","E:\\chromedriver_win32\\chromedriver.exe");
 //		driver = new RemoteWebDriver(new URL("http://139.59.77.9:4444/"),new ChromeOptions()); 
 //	    ChromeOptions options= new ChromeOptions();
@@ -30,7 +30,7 @@ public class DemoTest {
 //		DesiredCapabilities capability = DesiredCapabilities.chrome();
 //		driver = new RemoteWebDriver(new URL("http://139.59.77.9:4444/"), capability);
 		ChromeOptions options= new ChromeOptions();
- 	    options.addArguments("headless");
+ 	        options.addArguments("headless");
 		driver= new ChromeDriver(options);
 		driver.get("https://www.pionglobal.com/");
 	       
